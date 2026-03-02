@@ -1,0 +1,42 @@
+header {
+    background: linear-gradient(45deg, #4CAF50, #388E3C);
+}
+.btn:hover {
+    background: #388E3C;
+    transition: background 0.3s ease;
+}
+/* Styling for the navigation links */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 1.2em;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease; /* Adding smooth transition for color and scale */
+}
+
+/* Hover effect */
+nav a:hover {
+    color: #ffeb3b; /* Change color on hover */
+    transform: scale(1.1); /* Slightly enlarge the link */
+}
+
+/* Adding underline effect on hover */
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #ffeb3b; /* Yellow underline */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+/* When hovering, show the underline */
+nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}

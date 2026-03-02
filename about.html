@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FryBuddy - More Information</title>
+    <style>
+        body { font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; margin: 0; padding: 0; line-height: 1.6; background-color: #f4f4f4; }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 { margin: 0; }
+
+        /* Styling for the navigation links */
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 1.2em;
+            position: relative;
+            transition: color 0.3s ease, transform 0.3s ease; /* Adding smooth transition for color and scale */
+        }
+
+        nav a:hover {
+            color: #ffeb3b; /* Change color on hover */
+            transform: scale(1.1); /* Slightly enlarge the link */
+        }
+
+        /* Adding underline effect on hover */
+        nav a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 100%;
+            height: 2px;
+            background-color: #ffeb3b; /* Yellow underline */
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease-out;
+        }
+
+        /* When hovering, show the underline */
+        nav a:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+        h2 { color: #333; }
+        p, ul { font-size: 1.1em; }
+        footer { background: #333; color: white; text-align: center; padding: 20px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>FryBuddy - More Information</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">More Info</a>
+    </nav>
+</header>
+
+<section id="detailed-info">
+    <h2>How FryBuddy Works</h2>
+    <p>FryBuddy works by converting used cooking oil into liquid soap using a semi-automatic process. It’s simple and safe, allowing you to recycle waste oil into a useful product in just a few minutes.</p>
+
+    <h2>Our Commitment to Sustainability</h2>
+    <p>We are committed to reducing environmental impact by providing a practical solution to used cooking oil disposal. FryBuddy turns waste into a resource, helping reduce pollution and waste.</p>
+    
+    <h2>Why Choose FryBuddy?</h2>
+    <ul>
+        <li>Easy to use – No complicated processes or machinery required.</li>
+        <li>Eco-friendly – Reduce waste, help the environment.</li>
+        <li>Cost-effective – Make soap at home with minimal costs.</li>
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; 2026 FryBuddy – Used Cooking Oil Converter. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

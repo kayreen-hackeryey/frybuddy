@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FryBuddy - Used Cooking Oil Converter - Instant Soap</title>
+    <style>
+        body { font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; margin: 0; padding: 0; line-height: 1.6; background-color: #f4f4f4; }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 { margin: 0; }
+
+        /* Styling for the navigation links */
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 1.2em;
+            position: relative;
+            transition: color 0.3s ease, transform 0.3s ease; /* Adding smooth transition for color and scale */
+        }
+
+        /* Hover effect */
+        nav a:hover {
+            color: #ffeb3b; /* Change color on hover */
+            transform: scale(1.1); /* Slightly enlarge the link */
+        }
+
+        /* Adding underline effect on hover */
+        nav a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 100%;
+            height: 2px;
+            background-color: #ffeb3b; /* Yellow underline */
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease-out;
+        }
+
+        /* When hovering, show the underline */
+        nav a:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+        .features, .pricing { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+        .feature, .plan { background: white; padding: 20px; border-radius: 10px; flex: 1 1 250px; box-shadow: 0 0 10px rgba(0,0,0,0.1); text-align: center; }
+        .feature img, .plan img { width: 100px; height: 100px; object-fit: contain; margin-bottom: 10px; }
+        .btn { display: inline-block; padding: 10px 20px; background: #4CAF50; color: white; border-radius: 5px; text-decoration: none; margin-top: 10px; }
+        footer { background: #333; color: white; text-align: center; padding: 20px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>FryBuddy - Used Cooking Oil Converter - Instant Soap</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">More Info</a>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>About FryBuddy</h2>
+    <p>Our semi-automatic, enclosed converter transforms 2-3 liters of used cooking oil into instant liquid soap, household cleaner. Safe, fast, and easy to use at home. Comes with gloves and HDPE container. Perfect for households, schools, and eco-conscious families.</p>
+</section>
+
+<section id="features">
+    <h2>Features & Benefits</h2>
+    <div class="features">
+        <div class="feature">
+            <img src="frybuddy.png" alt="FryBuddy Mascot">
+            <h3>Our Values</h3>
+            <p>FryBuddy makes soap-making easy, safe, and fun for everyone.</p>
+        </div>
+        <div class="feature">
+            <img src="soap.png" alt="Instant Soap">
+            <h3>Instant Soap</h3>
+            <p>Get ready-to-use liquid soap in just minutes from used cooking oil.</p>
+        </div>
+        <div class="feature">
+            <img src="eco.png" alt="Eco-Friendly">
+            <h3>Eco-Friendly</h3>
+            <p>Reduce pollution by turning household oil waste into useful products.</p>
+        </div>
+    </div>
+</section>
+
+<section id="pricing">
+    <h2>Pricing & Order</h2>
+    <div class="pricing">
+        <div class="plan">
+            <img src="machine.png" alt="Converter Machine">
+            <h3>Converter Machine</h3>
+            <p>IDR 500,000 per unit</p>
+            <a href="#order" class="btn">Order Now</a>
+        </div>
+        <div class="plan">
+            <img src="refill.png" alt="Refill Kit">
+            <h3>Refill Kit</h3>
+            <p>IDR 60,000 per kit</p>
+            <a href="#order" class="btn">Order Now</a>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact & Order</h2>
+    <p>WhatsApp: +62 812 3456 7890 | Email: hello@frybuddy.com</p>
+    <a href="https://wa.me/6281234567890" class="btn">Order via WhatsApp</a>
+</section>
+
+<footer>
+    <p>&copy; 2026 FryBuddy – Used Cooking Oil Converter. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
